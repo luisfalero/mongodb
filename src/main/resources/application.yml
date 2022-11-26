@@ -4,5 +4,7 @@ application:
 spring:
   data:
     mongodb:
-      uri: ${MONGODB_URI}
-      database: ${MONGODB_DATABASE}
+      uri: mongodb+srv://womk8s:P%40%40sword%25@cluster0.vqabawo.mongodb.net
+      database: wom
+      #uri: ${MONGODB_URI}
+      #database: ${MONGODB_DATABASE}
