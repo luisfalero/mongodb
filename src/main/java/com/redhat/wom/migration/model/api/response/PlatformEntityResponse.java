@@ -1,4 +1,4 @@
-package com.redhat.wom.migration.model.api;
+package com.redhat.wom.migration.model.api.response;
 
 import lombok.*;
 
@@ -8,8 +8,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class PlatformEntityRequest {
+public class PlatformEntityResponse {
 
+    private String id;
     private String name;
     private String description;
 }

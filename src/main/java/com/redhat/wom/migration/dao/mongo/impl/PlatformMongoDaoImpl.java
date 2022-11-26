@@ -1,8 +1,8 @@
 package com.redhat.wom.migration.dao.mongo.impl;
 
 import com.redhat.wom.migration.dao.mongo.PlatformMongoDao;
-import com.redhat.wom.migration.model.api.PlatformEntityRequest;
-import com.redhat.wom.migration.model.api.PlatformEntityResponse;
+import com.redhat.wom.migration.model.api.request.PlatformEntityRequest;
+import com.redhat.wom.migration.model.api.response.PlatformEntityResponse;
 import com.redhat.wom.migration.model.entity.mongo.PlatformEntity;
 import com.redhat.wom.migration.repository.mongo.PlatformMongoRepository;
 import lombok.AllArgsConstructor;
