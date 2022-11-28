@@ -2,10 +2,10 @@ package com.redhat.wom.expose.web;
 
 import com.redhat.wom.migration.exception.ServiceException;
 import com.redhat.wom.migration.exception.ServiceGenericException;
-import com.redhat.wom.migration.exception.impl.HandleArgumentNotValidResponse;
-import com.redhat.wom.migration.exception.impl.HandleExceptionGenericResponse;
-import com.redhat.wom.migration.exception.impl.HandleExceptionResponse;
-import com.redhat.wom.migration.uti.CommonsContants;
+import com.redhat.wom.migration.exception.response.HandleArgumentNotValidResponse;
+import com.redhat.wom.migration.exception.response.HandleExceptionGenericResponse;
+import com.redhat.wom.migration.exception.response.HandleExceptionResponse;
+import com.redhat.wom.migration.util.CommonsContants;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -52,8 +52,8 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
         }
 
         HandleArgumentNotValidResponse notValidResponse = new HandleArgumentNotValidResponse();
-        notValidResponse.setCode(CommonsContants.TL00001);
-        notValidResponse.setLiteral(CommonsContants.TL00001_LITERAL);
+        notValidResponse.setCode(CommonsContants.TL00002);
+        notValidResponse.setLiteral(CommonsContants.TL00002_LITERAL);
         notValidResponse.setErrors(errors);
 
         return handleExceptionInternal(ex, notValidResponse, headers, HttpStatus.BAD_REQUEST, request);

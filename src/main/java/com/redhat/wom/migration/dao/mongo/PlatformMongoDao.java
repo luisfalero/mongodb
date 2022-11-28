@@ -9,4 +9,5 @@ public interface PlatformMongoDao {
 
     Mono<PlatformEntityResponse> savePlatform(PlatformEntityRequest entityRequest);
     Flux<PlatformEntityResponse> findAllPlatform();
+
 }

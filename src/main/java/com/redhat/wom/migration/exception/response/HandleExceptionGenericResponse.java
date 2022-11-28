@@ -1,4 +1,4 @@
-package com.redhat.wom.migration.exception.impl;
+package com.redhat.wom.migration.exception.response;
 
 import lombok.Getter;
 import lombok.Setter;
