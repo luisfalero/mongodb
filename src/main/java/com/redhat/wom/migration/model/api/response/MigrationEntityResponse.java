@@ -1,5 +1,6 @@
 package com.redhat.wom.migration.model.api.response;
 
+import com.redhat.wom.migration.model.entity.mongo.ExportMigrationEntity;
 import lombok.*;
 
 @Getter
@@ -12,5 +13,6 @@ public class MigrationEntityResponse {
 
     private String id;
     private String name;
-    private String description;
+    private boolean migration;
+    private ExportMigrationEntity export;
 }

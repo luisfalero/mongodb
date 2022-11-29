@@ -14,6 +14,8 @@ public class ServiceEntity {
 
     @Id
     private String id;
+    private String projectName;
     private String name;
+    private String version;
     
 }

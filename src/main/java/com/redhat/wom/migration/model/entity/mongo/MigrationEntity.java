@@ -15,6 +15,6 @@ public class MigrationEntity {
     @Id
     private String id;
     private String name;
-    private boolean status;
+    private boolean migration;
     private ExportMigrationEntity export;
 }
